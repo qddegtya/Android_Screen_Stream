@@ -7,7 +7,7 @@ Android_Screen_Stream
 
 ### 工具优点
 
-采用ddmlib高效截图方式,不在手机内部运行
+采用ddmlib高效截图方式,在MAC系统下效果尤佳,延时控制在2-3秒内
 
 ### 运行环境
 
