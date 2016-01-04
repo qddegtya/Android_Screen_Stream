@@ -1,15 +1,11 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
-# Android_ScreenSream by Archer
-# Based on Jython,ddmlib,opencv,guava
 
-#import jar
 import sys,os
 sys.path.append(r'C:\\ddmlib.jar')
 sys.path.append(r'C:\\guava17.jar')
 sys.path.append(r'C:\\rt.jar')
 
-#import lib
 from java.awt.image import *
 from java.io import *
 from javax.imageio import *
@@ -49,7 +45,7 @@ class AndroidScreenStream(object):
         """根据index获取单个当前设备"""
         AndroidDebugBridge.init(False)
         mybridge=AndroidDebugBridge.createBridge()
-        self.wait_device_lists(mybridge) #get
+        self.wait_device_lists(mybridge)
         try:
             self.currentdevice=mybridge.getDevices()[index]
             return self
@@ -59,7 +55,7 @@ class AndroidScreenStream(object):
 
     def get_current_screen_imgbyes(self):
         """获取当前屏幕图像的字节数据"""
-        self.rawimgdata=self.currentdevice.getScreenshot().data #保存图像字节数据
+        self.rawimgdata=self.currentdevice.getScreenshot().data  # 保存图像字节数据
         return self
 
     def get_current_rawscreen(self):
@@ -71,7 +67,7 @@ class AndroidScreenStream(object):
         """将当前屏幕图像数据保存为图片"""
         if self.rawscreen is not None:
             landscape=islandscape
-            #横屏尺寸处理
+            # 横屏尺寸处理
             imgwidth=self.rawscreen.height if landscape else self.rawscreen.width
             imgheight=self.rawscreen.width if landscape else self.rawscreen.height
             image=BufferedImage(imgwidth,imgheight,BufferedImage.TYPE_INT_RGB)
