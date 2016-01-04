@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
-import sys,os
+import sys, os
 sys.path.append(r'C:\\ddmlib.jar')
 sys.path.append(r'C:\\guava17.jar')
 sys.path.append(r'C:\\rt.jar')
