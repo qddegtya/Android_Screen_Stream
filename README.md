@@ -25,9 +25,7 @@ jython screenshot.py
 
 ### 打开demo.html
 
-然后在目录中找到 demo.html 用 chrome 或者 Firefox 打开
-你就可以欣赏到屏幕回传了。
-不支持 IE9 以下浏览器......
+然后在目录中找到 demo.html 用 chrome 或者 Firefox 打开你就可以欣赏到屏幕回传了。不支持 IE9 以下浏览器......
 
 ### 效果展示
 
